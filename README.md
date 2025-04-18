@@ -1,74 +1,66 @@
-# 📊 IGNDPS Beneficiary Analysis Dashboard (2024–2025)
+# 📊 Excel Data Analytics Dashboards: IGNDPS & U.S. Border Crossing Index
 
-This project presents an interactive Excel-based dashboard designed to analyze and visualize the performance of the **Indira Gandhi National Disability Pension Scheme (IGNDPS)** across Indian states and districts for the financial year **2024–2025**.
+This repository contains two interactive and visually-rich **Excel dashboards** developed entirely using built-in Excel features. Each dashboard addresses a unique dataset and delivers impactful insights through data modeling, pivot charts, slicers, and conditional formatting.
 
 ---
 
-## 📁 Dataset Overview
+## 📁 Projects Included
 
-The dashboard uses official data containing:
-- State and district-level details
-- Monthly beneficiary count
-- Demographic classification (SC, ST, OBC, GEN)
-- Aadhaar and Mobile number linkage
-- Last update timestamps
+### 1️⃣ IGNDPS Beneficiary Analysis Dashboard (Data.gov.in)
 
-**Sheet Name:** `realtime_data`
+An analytical dashboard built to monitor the progress and digital inclusion of the **Indira Gandhi National Disability Pension Scheme (IGNDPS)** across Indian states and districts.
 
+#### ✅ Key Features:
+- State and district-wise breakdown of total beneficiaries
+- Caste/category-wise demographics: SC, ST, OBC, GEN
+- Aadhaar and mobile number linkage analytics
+- Timeline filtering by month and financial year
+- KPI-driven insights for better policy evaluation
+
+#### 📂 Dataset Columns:
 | Column             | Description                                  |
 |--------------------|----------------------------------------------|
 | `fin_year`         | Financial year of the report                 |
-| `mnth`             | Month (numerical)                            |
+| `mnth`             | Month (numeric)                              |
 | `state_name`       | State/UT name                                |
 | `district_name`    | District name                                |
-| `total_beneficiaries` | Total beneficiaries enrolled              |
-| `total_sc` / `total_st` / `total_obc` / `total_gen` | Caste-wise count |
-| `total_aadhar`     | Beneficiaries linked with Aadhaar            |
-| `total_mobileno`   | Beneficiaries with mobile numbers linked     |
-| `lastUpdated`      | Last update date of the record               |
+| `total_beneficiaries` | Total enrolled under IGNDPS               |
+| `total_aadhar`     | Aadhaar-linked beneficiaries                 |
+| `total_mobileno`   | Mobile-linked beneficiaries                  |
+| `total_sc` / `total_st` / `total_obc` / `total_gen` | Caste-wise segmentation |
 
 ---
 
-## 📌 Objectives of the Dashboard
+### 2️⃣ U.S. Border Crossing Index Dashboard (Data.gov)
 
-1. **Track Beneficiary Distribution**
-   - District and state-wise beneficiary mapping.
-2. **Analyze Social Category Representation**
-   - Breakdown of SC/ST/OBC/General participation.
-3. **Monitor Aadhaar & Mobile Linkage**
-   - Digital inclusion analytics across states.
-4. **Filter by Time Period**
-   - Select year/month dynamically for real-time monitoring.
-5. **Compare State Performance**
-   - Use visual insights (heatmaps, KPIs) to evaluate state-wise progress.
+A data visualization dashboard created using publicly available **U.S. Border Crossing Entry Data** sourced from [Data.gov](https://data.gov/). This project focuses on analyzing traffic trends across land, air, and sea borders.
+
+#### ✅ Key Features:
+- Port-wise and state-wise crossing counts
+- Entry mode analysis (Pedestrian, Personal Vehicle, Train, etc.)
+- Temporal analysis with filters for Year and Month
+- Cross-comparison of border activity over time
+
+#### 📂 Dataset Columns:
+| Column         | Description                          |
+|----------------|--------------------------------------|
+| `Port Name`    | U.S. Port of entry                   |
+| `State`        | U.S. state the port is located in    |
+| `Border`       | Border type (Northern/Southern)      |
+| `Measure`      | Mode of crossing (e.g. Pedestrian)   |
+| `Value`        | Number of crossings                  |
+| `Date`         | Time of data capture                 |
 
 ---
 
-## 📦 Tech Stack
+## 🧰 Tools Used
 
 - **Microsoft Excel**
   - Pivot Tables
-  - Slicers & Timelines
+  - Pivot Charts
+  - Timelines & Slicers
   - Conditional Formatting
-  - Charts (Column, Pie, Heat Maps, etc.)
-
----
-
-## 🚀 How to Use
-
-1. Download or clone the repository.
-2. Open the `IGNDPS.xlsx` file.
-3. Interact with slicers and charts to explore the dataset visually.
-4. Optionally, plug in new data to update insights automatically.
-
----
-
-## 📈 Insights
-
-This dashboard provides actionable insights for policy analysts, NGOs, and government agencies to:
-- Improve inclusion metrics.
-- Identify districts needing attention.
-- Strengthen digital record integration.
+  - Graphs
 
 ---
 
